@@ -1,16 +1,12 @@
 <template>
     <div>
-        <span>{{getUserNameFromUrl}}</span>
+        <span>{{username}}</span>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Profile',
-    computed: {
-        getUserNameFromUrl: function() {
-            return this.$route.params.username;
-        }
-    }
+    props: ['username'],
 }
 </script>

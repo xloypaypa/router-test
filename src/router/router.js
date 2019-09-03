@@ -9,7 +9,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
     routes: [
-        { path: '/profile/:username', name: 'profile', component: Profile },
+        { path: '/profile/:username', name: 'profile', component: Profile, props: true },
         {
             path: '/foo', name: 'foo', component: Foo,
             children: [
