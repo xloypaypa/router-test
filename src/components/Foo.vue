@@ -1,6 +1,7 @@
 <template>
     <div>
         <button @click="toBarAction">to bar</button>
+        <router-view/>
     </div>
 </template>
 
